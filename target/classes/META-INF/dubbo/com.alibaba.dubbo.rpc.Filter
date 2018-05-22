@@ -1,0 +1,2 @@
+spanConsumer=com.geex.trace.ConsumerSpanFilter
+spanProvider=com.geex.trace.ProviderSpanFilter
