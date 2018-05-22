@@ -1,6 +1,0 @@
-/Users/Leon/Documents/git/spring-dubbo-trace-starter/src/main/java/com/geex/trace/DubboSpanInjector.java
-/Users/Leon/Documents/git/spring-dubbo-trace-starter/src/main/java/com/geex/trace/DubboSpanExtractor.java
-/Users/Leon/Documents/git/spring-dubbo-trace-starter/src/main/java/com/geex/trace/ProviderSpanFilter.java
-/Users/Leon/Documents/git/spring-dubbo-trace-starter/src/main/java/com/geex/trace/TraceDubboAutoConfiguration.java
-/Users/Leon/Documents/git/spring-dubbo-trace-starter/src/main/java/com/geex/trace/ApplicationContextAwareBean.java
-/Users/Leon/Documents/git/spring-dubbo-trace-starter/src/main/java/com/geex/trace/ConsumerSpanFilter.java
