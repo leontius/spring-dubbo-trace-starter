@@ -6,6 +6,7 @@ import org.springframework.cloud.sleuth.Span.SpanBuilder;
 import org.springframework.cloud.sleuth.SpanExtractor;
 import org.springframework.util.StringUtils;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
@@ -48,6 +49,7 @@ public class DubboSpanExtractor implements SpanExtractor<RpcContext> {
         SpanBuilder span = Span.builder().traceId(traceId).spanId(spanId);
         String processId = attachments.get(Span.PROCESS_ID_NAME);
         String parentName = attachments.get(Span.SPAN_NAME_NAME);
+
         if (StringUtils.hasText(parentName)) {
             span.name(parentName);
         }
@@ -55,13 +57,28 @@ public class DubboSpanExtractor implements SpanExtractor<RpcContext> {
             span.processId(processId);
         }
         if (attachments.get(Span.PARENT_ID_NAME) != null) {
-            span.parent(Span
-                    .hexToId(attachments.get(Span.PARENT_ID_NAME)));
+            span.parent(Span.hexToId(attachments.get(Span.PARENT_ID_NAME)));
         }
         span.remote(true);
         if (skip) {
             span.exportable(false);
         }
+
+        // 方法上有参数的情况
+        if (carrier.getParameterTypes() != null) {
+            Map<String, String> tags = new HashMap<>(10);
+            for (int i = 0; i < carrier.getParameterTypes().length; i++) {
+                String parameterType = carrier.getParameterTypes()[i].getCanonicalName();
+                String arg = carrier.getArguments()[i].toString();
+                tags.put(parameterType, arg);
+            }
+
+            // 参数放入span
+            if (!tags.isEmpty()) {
+                span.tags(tags);
+            }
+        }
+
         return span.build();
     }
 }

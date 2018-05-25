@@ -7,8 +7,10 @@ public class Service1Impl implements Service1 {
     @Autowired
     Service2 service2;
 
-    public void hi() {
+    @Override
+    public void hi(String msg) {
         System.out.println("Service1.hi");
-        service2.hi();
+        System.out.println(msg);
+        service2.hi(msg);
     }
 }

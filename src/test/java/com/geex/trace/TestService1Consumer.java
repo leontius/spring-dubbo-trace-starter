@@ -19,7 +19,7 @@ public class TestService1Consumer {
     @Test
     public void test() {
         try {
-            service1.hi();
+            service1.hi("test");
             System.in.read();
 
         } catch (Exception e) {

@@ -32,7 +32,6 @@ public class DubboSpanInjector implements SpanInjector<RpcContext> {
             attachments.put(Span.PARENT_ID_NAME, Span.idToHex(parentId));
         }
         attachments.put(Span.PROCESS_ID_NAME, span.getProcessId());
-
     }
 
     private Long getParentId(Span span) {
