@@ -3,6 +3,8 @@ package com.geex.trace;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.web.context.ContextLoader;
+import org.springframework.web.context.WebApplicationContext;
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,5 +20,6 @@ public class ApplicationContextAwareBean implements ApplicationContextAware {
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         CONTEXT = applicationContext;
+        System.setProperty("spring.application.name", CONTEXT.getId());
     }
 }

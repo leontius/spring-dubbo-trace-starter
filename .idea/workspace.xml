@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5357c472-0e45-46fa-990f-d7637baeb1d9" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geex/trace/DubboSpanExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geex/trace/DubboSpanExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geex/trace/DubboSpanInjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geex/trace/DubboSpanInjector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geex/trace/ProviderSpanFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geex/trace/ProviderSpanFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/geex/trace/TestService1Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geex/trace/TestService1Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/geex/trace/api/Service1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geex/trace/api/Service1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/geex/trace/api/Service1Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geex/trace/api/Service1Impl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/geex/trace/api/Service2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geex/trace/api/Service2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/geex/trace/api/Service2Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geex/trace/api/Service2Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geex/trace/ApplicationContextAwareBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geex/trace/ApplicationContextAwareBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +20,7 @@
       <file leaf-file-name="ProviderSpanFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/ProviderSpanFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
+            <state>
               <caret line="50" column="96" selection-start-line="50" selection-start-column="96" selection-end-line="50" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -34,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConsumerSpanFilter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConsumerSpanFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/ConsumerSpanFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+            <state relative-caret-position="648">
+              <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,22 +44,20 @@
       <file leaf-file-name="DubboSpanExtractor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/DubboSpanExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
+            <state relative-caret-position="875">
               <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#578#579#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DubboSpanInjector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/DubboSpanInjector.java">
+      <file leaf-file-name="TraceDubboManualConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/TraceDubboManualConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+            <state relative-caret-position="500">
+              <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,11 +65,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Service1Impl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/geex/trace/api/Service1Impl.java">
+      <file leaf-file-name="ApplicationContextAwareBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/ApplicationContextAwareBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="304">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZipkinAutoConfiguration.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-zipkin/1.2.0.RELEASE/spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar!/org/springframework/cloud/sleuth/zipkin/ZipkinAutoConfiguration.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -90,35 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestService2Provider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/geex/trace/TestService2Provider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestService1Consumer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestService1Consumer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/geex/trace/TestService1Consumer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
               <caret line="28" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestService1Provider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/geex/trace/TestService1Provider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -167,17 +163,13 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/dubbo/com.alibaba.dubbo.rpc.Filter" />
-        <option value="$PROJECT_DIR$/src/test/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/geex/trace/TestApp.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/geex/trace/TestService2Provider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geex/trace/ApplicationContextAwareBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geex/util/RandomGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geex/trace/TraceDubboAutoConfiguration.java" />
         <option value="$PROJECT_DIR$/src/test/resources/log4j.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/geex/trace/TraceDubboConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geex/trace/TraceDubboManualConfiguration.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/com/geex/trace/api/Service1.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/geex/trace/api/Service2.java" />
@@ -188,6 +180,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geex/trace/DubboSpanInjector.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geex/trace/DubboSpanExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geex/trace/ProviderSpanFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geex/trace/TraceDubboAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geex/trace/TraceDubboManualConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geex/trace/ApplicationContextAwareBean.java" />
       </list>
     </option>
   </component>
@@ -288,23 +285,6 @@
               <item name="spring-dubbo-trace-starter" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-dubbo-trace-starter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-dubbo-trace-starter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-dubbo-trace-starter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-dubbo-trace-starter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-dubbo-trace-starter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -321,15 +301,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="trace" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-dubbo-trace-starter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-dubbo-trace-starter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="trace" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-dubbo-trace-starter" type="b2602c69:ProjectViewProjectNode" />
@@ -355,8 +326,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -394,7 +365,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestService1Consumer.test">
+  <component name="RunManager" selected="JUnit.TestService2Provider.test">
     <configuration name="TestService1Consumer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-dubbo-trace-starter" />
       <extension name="coverage">
@@ -535,10 +506,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestService2Provider.test" />
         <item itemvalue="JUnit.TestService1Consumer.test" />
         <item itemvalue="JUnit.TestService1Provider" />
         <item itemvalue="JUnit.TestService2Provider" />
-        <item itemvalue="JUnit.TestService2Provider.test" />
         <item itemvalue="JUnit.TestService1Consumer" />
       </list>
     </recent_temporary>
@@ -561,6 +532,8 @@
       <workItem from="1526897834596" duration="19017000" />
       <workItem from="1527055491853" duration="12884000" />
       <workItem from="1527215009261" duration="6565000" />
+      <workItem from="1527252285751" duration="44000" />
+      <workItem from="1527496927376" duration="5459000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <created>1526979581657</created>
@@ -569,43 +542,50 @@
       <option name="project" value="LOCAL" />
       <updated>1526979581657</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1527252303839</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527252303840</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestService1Provider - 2018.05.23 at 18h 07m 24s.xml">
-      <configuration name="TestService1Provider" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestService1Consumer_test - 2018.05.23 at 18h 07m 24s.xml">
-      <configuration name="TestService1Consumer.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestService2Provider_test - 2018.05.23 at 18h 07m 24s.xml">
+    <history-entry file="TestService2Provider_test - 2018.05.28 at 17h 25m 09s.xml">
       <configuration name="TestService2Provider.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestService1Consumer_test - 2018.05.23 at 18h 09m 09s.xml">
-      <configuration name="TestService1Consumer.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestService1Provider - 2018.05.23 at 18h 09m 09s.xml">
-      <configuration name="TestService1Provider" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestService2Provider - 2018.05.23 at 18h 09m 09s.xml">
-      <configuration name="TestService2Provider" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestService1Provider - 2018.05.25 at 15h 42m 14s.xml">
-      <configuration name="TestService1Provider" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestService1Consumer_test - 2018.05.25 at 15h 42m 14s.xml">
-      <configuration name="TestService1Consumer.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestService2Provider_test - 2018.05.25 at 15h 42m 14s.xml">
+    <history-entry file="TestService2Provider_test - 2018.05.28 at 17h 25m 40s.xml">
       <configuration name="TestService2Provider.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestService1Consumer_test - 2018.05.25 at 16h 11m 55s.xml">
+    <history-entry file="TestService1Consumer_test - 2018.05.28 at 17h 29m 45s.xml">
       <configuration name="TestService1Consumer.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService1Consumer_test - 2018.05.28 at 17h 30m 54s.xml">
+      <configuration name="TestService1Consumer.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService2Provider_test - 2018.05.28 at 17h 58m 06s.xml">
+      <configuration name="TestService2Provider.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService1Provider - 2018.05.28 at 17h 58m 06s.xml">
+      <configuration name="TestService1Provider" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService2Provider_test - 2018.05.28 at 17h 58m 23s.xml">
+      <configuration name="TestService2Provider.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService2Provider_test - 2018.05.28 at 17h 59m 54s.xml">
+      <configuration name="TestService2Provider.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService2Provider_test - 2018.05.28 at 18h 00m 07s.xml">
+      <configuration name="TestService2Provider.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService2Provider_test - 2018.05.28 at 19h 02m 24s.xml">
+      <configuration name="TestService2Provider.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50151000" />
+    <option name="totallyTimeSpent" value="55654000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -618,10 +598,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005325" side_tool="true" weight="0.3299389" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.17305644" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.17305644" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -629,7 +610,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33910388" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.33910388" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299389" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3299389" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -640,7 +621,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299389" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3299389" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18423855" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18743344" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="JProfiler" order="7" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -672,21 +653,42 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git init" />
-    <option name="LAST_COMMIT_MESSAGE" value="git init" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/geex/trace/ApplicationContextAwareBean.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="19" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="CONTEXT.getId()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>CONTEXT.getId()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>CONTEXT.getApplicationName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-dependencies/Brixton.RELEASE/spring-cloud-dependencies-Brixton.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1362" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-zipkin/1.3.3.RELEASE/spring-cloud-sleuth-zipkin-1.3.3.RELEASE.jar!/org/springframework/cloud/sleuth/zipkin2/ZipkinLoadBalancer.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-core/1.3.3.RELEASE/spring-cloud-sleuth-core-1.3.3.RELEASE.jar!/org/springframework/cloud/sleuth/Span.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.8.4-SNAPSHOT/dubbo-2.8.4-20160717.080900-2.jar!/com/alibaba/dubbo/rpc/Filter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -825,13 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-core/1.2.0.RELEASE/spring-cloud-sleuth-core-1.2.0.RELEASE.jar!/org/springframework/cloud/sleuth/log/SleuthLogAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -853,16 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/TraceDubboManualConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -870,34 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/TraceDubboAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/ApplicationContextAwareBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -963,13 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/geex/trace/TestService1Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/geex/trace/api/Service2Impl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -984,31 +938,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/DubboSpanExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/DubboSpanInjector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/ProviderSpanFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
+        <state>
           <caret line="50" column="96" selection-start-line="50" selection-start-column="96" selection-end-line="50" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1018,11 +950,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/ConsumerSpanFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+        <state relative-caret-position="648">
+          <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/DubboSpanInjector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/DubboSpanExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE.jar!/org/springframework/boot/autoconfigure/condition/ConditionalOnProperty.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-core/1.2.0.RELEASE/spring-cloud-sleuth-core-1.2.0.RELEASE.jar!/org/springframework/cloud/sleuth/log/SleuthLogAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/TraceDubboAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-zipkin/1.2.0.RELEASE/spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar!/org/springframework/cloud/sleuth/zipkin/ZipkinAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/TraceDubboManualConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geex/trace/ApplicationContextAwareBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/geex/trace/TestService1Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
