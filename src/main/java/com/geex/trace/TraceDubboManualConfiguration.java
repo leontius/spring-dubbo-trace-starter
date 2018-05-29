@@ -24,7 +24,6 @@ import org.springframework.context.annotation.Import;
  */
 @Configuration
 @Import({
-        ZipkinAutoConfiguration.class,
         TraceDubboAutoConfiguration.class,
         TraceAutoConfiguration.class,
         TraceMetricsAutoConfiguration.class,
@@ -34,8 +33,7 @@ import org.springframework.context.annotation.Import;
         TraceHttpAutoConfiguration.class,
         TraceWebAutoConfiguration.class,
         TraceWebClientAutoConfiguration.class,
-        TraceWebAsyncClientAutoConfiguration.class,
-        TraceFeignClientAutoConfiguration.class
+        TraceWebAsyncClientAutoConfiguration.class
 })
 public class TraceDubboManualConfiguration {
 }
