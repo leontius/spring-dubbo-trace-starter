@@ -7,10 +7,8 @@ import org.springframework.cloud.sleuth.instrument.web.TraceHttpAutoConfiguratio
 import org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration;
 import org.springframework.cloud.sleuth.instrument.web.client.TraceWebAsyncClientAutoConfiguration;
 import org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration;
-import org.springframework.cloud.sleuth.instrument.web.client.feign.TraceFeignClientAutoConfiguration;
 import org.springframework.cloud.sleuth.log.SleuthLogAutoConfiguration;
 import org.springframework.cloud.sleuth.metric.TraceMetricsAutoConfiguration;
-import org.springframework.cloud.sleuth.zipkin.ZipkinAutoConfiguration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
