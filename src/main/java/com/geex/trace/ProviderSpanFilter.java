@@ -36,13 +36,7 @@ public class ProviderSpanFilter implements Filter {
 
             isTraceDubbo = (tracer != null && spanExtractor != null && spanInjector != null && spanReporter != null);
             if (isTraceDubbo) {
-                String args = "";
-                if (invocation.getArguments() != null) {
-                    for (Object o : invocation.getArguments()) {
-                        args += o.toString().concat(",");
-                    }
-                }
-                String spanName = invoker.getUrl().getParameter("interface") + ":" + invocation.getMethodName() + "(" + args + ")";
+                String spanName = invoker.getUrl().getParameter("interface") + ":" + invocation.getMethodName();
                 Span parent = spanExtractor.joinTrace(RpcContext.getContext());
                 boolean skip = Span.SPAN_NOT_SAMPLED.equals(attachments.get(Span.SAMPLED_NAME));
                 if (parent != null) {

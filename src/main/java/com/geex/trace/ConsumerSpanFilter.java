@@ -30,13 +30,7 @@ public class ConsumerSpanFilter implements Filter {
             spanInjector = ApplicationContextAwareBean.CONTEXT.getBean(DubboSpanInjector.class);
             isTraceDubbo = (tracer != null && spanInjector != null);
             if (isTraceDubbo) {
-                String args = "";
-                if (invocation.getArguments() != null) {
-                    for (Object o : invocation.getArguments()) {
-                        args += o.toString().concat(",");
-                    }
-                }
-                String spanName = invoker.getUrl().getParameter("interface") + ":" + invocation.getMethodName() + "(" + args + ")";
+                String spanName = invoker.getUrl().getParameter("interface") + ":" + invocation.getMethodName();
                 Span newSpan = tracer.createSpan(spanName);
                 spanInjector.inject(newSpan, RpcContext.getContext());
                 newSpan.logEvent(Span.CLIENT_SEND);
