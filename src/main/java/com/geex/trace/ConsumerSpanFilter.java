@@ -8,8 +8,6 @@ import org.springframework.cloud.sleuth.Span;
 import org.springframework.cloud.sleuth.SpanInjector;
 import org.springframework.cloud.sleuth.Tracer;
 
-import java.util.Map;
-
 /**
  * Created with IntelliJ IDEA.
  * Date: 18/5/21
@@ -28,7 +26,6 @@ public class ConsumerSpanFilter implements Filter {
         Tracer tracer = null;
         SpanInjector spanInjector = null;
         try {
-            Map<String, String> attachments = RpcContext.getContext().getAttachments();
             tracer = ApplicationContextAwareBean.CONTEXT.getBean(Tracer.class);
             spanInjector = ApplicationContextAwareBean.CONTEXT.getBean(DubboSpanInjector.class);
             isTraceDubbo = (tracer != null && spanInjector != null);

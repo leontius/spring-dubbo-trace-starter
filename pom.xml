@@ -167,7 +167,7 @@
             </activation>
             <properties>
                 <env>dev</env>
-                <geex-trace-version>0.0.1-SNAPSHOT</geex-trace-version>
+                <geex-trace-version>1.0.0-SNAPSHOT</geex-trace-version>
             </properties>
         </profile>
 

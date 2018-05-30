@@ -3,8 +3,6 @@ package com.geex.trace;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
-import org.springframework.web.context.ContextLoader;
-import org.springframework.web.context.WebApplicationContext;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,10 +14,13 @@ import org.springframework.web.context.WebApplicationContext;
  */
 public class ApplicationContextAwareBean implements ApplicationContextAware {
     public static ApplicationContext CONTEXT;
+    private static final String SPRING_SLEUTH_SAMPLER_PERCENTAGE = "spring.sleuth.sampler.percentage";
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         CONTEXT = applicationContext;
-        System.setProperty("spring.application.name", CONTEXT.getId());
+        if (!System.getProperties().containsKey(SPRING_SLEUTH_SAMPLER_PERCENTAGE)) {
+            System.setProperty(SPRING_SLEUTH_SAMPLER_PERCENTAGE, "1");
+        }
     }
 }
