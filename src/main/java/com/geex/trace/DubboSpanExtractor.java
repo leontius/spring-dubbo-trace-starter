@@ -65,7 +65,8 @@ public class DubboSpanExtractor implements SpanExtractor<RpcContext> {
         }
 
         // 方法上有参数的情况
-        if (carrier.getParameterTypes() != null) {
+        if (carrier.getParameterTypes() != null &&
+                carrier.getParameterTypes().length > 0) {
             Map<String, String> tags = new HashMap<>(10);
             for (int i = 0; i < carrier.getParameterTypes().length; i++) {
                 String parameterType = carrier.getParameterTypes()[i].getCanonicalName();
